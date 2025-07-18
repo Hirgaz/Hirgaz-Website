@@ -1,0 +1,17 @@
+---
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+.site-header {
+    background-color: darken($background-color, 10%);
+    border-top: 0px;
+    border-bottom: 2px solid darken($border-color-01, 20%);
+}
+
+.site-footer {
+    border-top: 2px solid darken($border-color-01, 20%);
+    background-color: darken($background-color, 10%);
+}

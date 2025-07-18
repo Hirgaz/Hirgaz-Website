@@ -1,0 +1,29 @@
+---
+layout: base
+---
+<header class="post-header">
+    {%- if page.icon %}
+        <img src="{{ page.icon }}" alt="{{ page.name }}" style="display: inline; vertical-align: middle"/>
+    {%- endif %}
+    <h1 style="display: inline; vertical-align: middle">{{ page.name }}</h1>
+    <div class="post-meta">
+        <span class="meta-label">{{ page.description }}</span>
+        {%- if page.version %}
+            <div class="force-inline post-authors">
+                v: {{ page.version }}
+            </div>
+        {%- endif %}
+        <div class="force-inline post-authors">
+            {%- if page.play-url %}
+                <a href="{{ page.play-url }}" title="Play online!"><span class="grey fa-solid fa-play fa-lg"></span></a>
+            {%- endif %}
+            {%- if page.github-url %}
+                <a rel="me" href="{{ page.github-url }}" title="GitHub"><span class="grey fa-brands fa-github fa-lg"></span></a>
+            {%- endif %}
+        </div>
+    </div>
+</header>
+
+<!-- TODO: Fetch latest build etc. -->
+
+{{ content }}
