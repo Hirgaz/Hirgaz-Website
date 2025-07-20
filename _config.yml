@@ -36,3 +36,6 @@ minima:
         - title: Hirgaz Studios at Github
           icon: github
           url: "https://github.com/hirgaz"
+        - title: Hirgaz Studios at Bluesky
+          icon: bluesky
+          url: "https://bsky.app/profile/hirgaz.bsky.social"
